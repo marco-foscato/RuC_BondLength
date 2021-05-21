@@ -1,0 +1,16 @@
+# FragSpaceExplorer - paramerers
+FSE-MaxLevel=4
+FSE-NumOfProcessors=8
+
+# Fragment Space - paramerers
+FS-ScaffoldLibFile=../scaffold.sdf
+FS-FragmentLibFile=../fragments_noHe.sdf
+FS-CappingFragmentLibFile=../capping_groups.sdf
+FS-CompMatrixFile=../compatibility_matrix.par
+FS-MaxHeavyAtom=1000
+FS-MaxMW=10000
+FS-MaxRotatableBond=1000
+FS-EnforceSymmetry=yes
+
+# Fitness Provider - paramerers
+FP-Equation=${MW}
