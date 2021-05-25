@@ -5,4 +5,4 @@ File [FS.params](FS.params) contains the parameters for definingin the fragment 
 
 File [FS_noHe.params](FS_noHe.params) contains the same information of [FS.params](FS.params) but refers to the list of fragments that do not contain He labels.
 
-The [enumeration](enumeration/README.md) folder contains the files and results from the enumeration of the fragment space.
+The [enumeration](enumeration) folder contains the files and results from the enumeration of the fragment space.
