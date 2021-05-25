@@ -1,0 +1,9 @@
+# Fragment Space - paramerers
+FS-ScaffoldLibFile=scaffold.sdf
+FS-FragmentLibFile=fragments.sdf
+FS-CappingFragmentLibFile=capping_groups.sdf
+FS-CompMatrixFile=compatibility_matrix.par
+FS-MaxHeavyAtom=1000
+FS-MaxMW=1000
+FS-MaxRotatableBond=1000
+FS-EnforceSymmetry=SELECTED_by_GUI

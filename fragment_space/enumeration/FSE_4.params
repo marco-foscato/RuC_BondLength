@@ -1,6 +1,10 @@
 # FragSpaceExplorer - paramerers
 FSE-MaxLevel=4
 FSE-NumOfProcessors=8
+FSE-RootGraphs=root_4
+FSE-RootGraphsFormat=STRING
+
+FP-Equation=${MW}
 
 # Fragment Space - paramerers
 FS-ScaffoldLibFile=../scaffold.sdf
