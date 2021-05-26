@@ -23,3 +23,4 @@ Finally, Tinker and Gaussian must be obtained and installed manually. Refer to t
 ## Looking for a sandbox dry-run?
 You might want to play with the data without engaging in computationally demanding DFT calculations. For this purpose, a super light fitness provider can be chosen and used in evolutionary design. The fitness function will rank the candidates based solely on their molecular weight: Obviously, this does not lead to any chemically meaningful design. Still, it allows you to play with the data.
 To run this kind of experiments, you can change the fitness provider configuration in the [evolutionary_desing/evolution.params file](evolutionary_desing/evolution.params) by uncommenting the "Fake provider" and commenting the "Actual provider".
+Notably, this kind of run works without installing Gaussian, Tinker, Openbabel, and AutoCompChem.
