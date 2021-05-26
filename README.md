@@ -16,7 +16,7 @@ The file [environment.yml](environment.yml) can be used to recreate a minor part
 conda env create --file environment.yml
 ```
 
-Next, DENOPTIM and AutoCompChem are both nested into the present repository as submodules. This means that the right version of these tools can be obtained by adding `--recurse-submodules` when cloning the present repository (`git clone --recurse-submodules <URL>`)
+Next, DENOPTIM and AutoCompChem are both nested into the present repository as submodules under the [tools folder](tools). This means that the right version of these tools can be obtained by adding `--recurse-submodules` when cloning the present repository (`git clone --recurse-submodules <URL>`)
 
 Finally, Tinker and Gaussian must be obtained and installed manually. Refer to the respective links above for instructions and license terms.
 
