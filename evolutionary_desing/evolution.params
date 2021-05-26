@@ -28,5 +28,8 @@ FS-MaxRotatableBond=20
 FS-EnforceSymmetry
 
 # Fitness Provider - paramerers
+# Actual Provider
 FP-Source=Ru_14-el_fitness_BndLng.sh
 FP-Interpreter=bash
+# Fake Provider (for demonstration only!)
+#FP-Equation=${MW}

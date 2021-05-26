@@ -1,0 +1,7 @@
+name: Ru-C_Design
+channels:
+  - defaults
+  - openbabel
+dependencies:
+  - openbabel
+  - openjdk=8.0.152
