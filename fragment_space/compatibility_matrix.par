@@ -8,24 +8,16 @@ RCN sArOrtho1:1 sArAlkS:0,sArCX:0,sArEP:0,sArMe:0,sArNitro:0,sArOther:0,sArTB:0,
 RCN sArOrtho2:1 sArAlkS:0,sArCX:0,sArEP:0,sArMe:0,sArNitro:0,sArOther:0,sArTB:0,sArX:0,aroicEst:0,aromarom:0,arAmTri:0
 RCN sArPara:1 sArAlkS:0,sArCX:0,sArEP:0,sArMe:0,sArNitro:0,sArOther:0,sArTB:0,sArX:0,aroicEst:0,aromarom:0,arAmTri:0
 # APClass-to-BondOrder
-RBO FeCp 1
 RBO LImidazolidinylideneSubCL 1
 RBO LImidazolidinylideneSubCS 1
 RBO LImidazolylideneSubCL 1
 RBO LImidazolylideneSubCS 1
-RBO MCO 1
-RBO MCl 1
-RBO MCp 1
 RBO MImidazolidinylidene 1
-RBO MImidazolidinylideneCap 1
-RBO MMethylidene 1
-RBO MPhosphine 1
 RBO arAmTri 1
 RBO aroicEst 1
 RBO aromarom 1
 RBO hyd 1
 RBO me 1
-RBO ome 1
 RBO sArAlkS 1
 RBO sArCX 1
 RBO sArEP 1
@@ -44,6 +36,6 @@ CAP LImidazolidinylideneSubCS:0 hyd:1
 CAP sArOrtho1:1 hyd:1
 CAP sArOrtho2:1 hyd:1
 CAP sArPara:1 hyd:1
-CAP sArPentaPh:1 hyd:1
+CAP sArPentaPh:1 me:1
 # Forbidden ends
 DEL MImidazolidinylidene:0 

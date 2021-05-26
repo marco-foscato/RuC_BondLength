@@ -1,0 +1,1 @@
+38 1_1_0_-1,2_44_1_0,20_23_1_1,13_15_1_1,60_23_1_1, 1_0_2_0_1_MImidazolidinylidene:0_MImidazolidinylidene:1,2_2_20_0_1_LImidazolidinylideneSubCS:0_LImidazolidinylideneSubCS:1,2_1_13_0_1_LImidazolidinylideneSubCL:0_LImidazolylideneSubCL:1,2_3_60_0_1_LImidazolidinylideneSubCS:0_LImidazolidinylideneSubCS:1, SymmetricSet [symVrtxIds=[20, 60]]

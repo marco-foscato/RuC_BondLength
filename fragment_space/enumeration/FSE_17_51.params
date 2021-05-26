@@ -1,0 +1,17 @@
+# FragSpaceExplorer - paramerers
+FSE-MaxLevel=4
+FSE-NumOfProcessors=1
+FSE-RootGraphs=root_17_51.txt
+FSE-RootGraphsFormat=STRING
+
+FP-Equation=${MW}
+
+# Fragment Space - paramerers
+FS-ScaffoldLibFile=../scaffold.sdf
+FS-FragmentLibFile=../fragments_noHe.sdf
+FS-CappingFragmentLibFile=../capping_groups.sdf
+FS-CompMatrixFile=../compatibility_matrix.par
+FS-MaxHeavyAtom=10000
+FS-MaxMW=10000
+FS-MaxRotatableBond=10000
+FS-EnforceSymmetry=SELECTED_by_GUI
