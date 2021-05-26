@@ -1,3 +1,6 @@
 [submodule "tools/DENOPTIM"]
 	path = tools/DENOPTIM
 	url = git@github.com:denoptim-project/DENOPTIM.git
+[submodule "tools/AutoCompChem"]
+	path = tools/AutoCompChem
+	url = git@github.com:denoptim-project/AutoCompChem.git
