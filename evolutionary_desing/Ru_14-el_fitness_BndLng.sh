@@ -146,7 +146,7 @@ echo "Starting DenoptimCG"
 # prepare param file 
 echo "CG-inpSDF=$inpSDF" > "$DenoptimCGParFile"
 echo "CG-outSDF=$DenoptimCG3Dout" >> "$DenoptimCGParFile"
-echo "CG-wrkDir=$wrkDir" >> "$DenoptimCGParFile"
+echo "CG-workDir=$wrkDir" >> "$DenoptimCGParFile"
 echo "FS-ScaffoldLibFile=$scaffoldLib" >> "$DenoptimCGParFile"
 echo "FS-FragmentLibFile=$fragmentLib" >> "$DenoptimCGParFile"
 echo "FS-CappingFragmentLibFile=$cappingLib" >> "$DenoptimCGParFile"
