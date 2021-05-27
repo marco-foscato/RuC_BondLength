@@ -49,8 +49,14 @@ cd ../..
 export RUCBONDDESIGN=/your/path/to/RuC_BondLength/evolutionary_desing
 ```
 
+## Running Evolutionary Design Experiments
+After having performed the above preparation, you can run an evolutionary experiment in a machine with sufficient cpu capacity to run very many DFT geometry optimization. This typically means you want to run on an HPC cluster (but to play with the data you can do a [dry run](#dry-runs).
+```
+cd evolutionary_desing
+java -jar ../tools/DENOPTIM/build/DenoptimGA.jar evolution.params
+```
 
-## Looking for a sandbox dry-run?
+### Dry runs
 You might want to play with the data without engaging in computationally demanding DFT calculations. For this purpose, a super light fitness provider can be chosen and used in evolutionary design. The fitness function will rank the candidates based solely on their molecular weight: Obviously, this does not lead to any chemically meaningful design. Still, it allows you to play with the data.
 To run this kind of experiments, you can change the fitness provider configuration in the [evolutionary_desing/evolution.params file](evolutionary_desing/evolution.params) by uncommenting the "Fake provider" and commenting the "Actual provider".
 Notably, this kind of run works without installing Gaussian, Tinker, Openbabel, and AutoCompChem.
