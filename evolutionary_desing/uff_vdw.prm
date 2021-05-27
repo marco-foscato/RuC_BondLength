@@ -158,9 +158,6 @@ atom        115    Uup   "(Ununpentium)"              115   288.0      9
 atom        116    Lv    "Livermorium"                116   293.0      9
 atom        117    Uus   "(Ununseptium)"              117   294.0      9
 atom        118    Uuo   "(Ununoctium)"               118   294.0      9
-#
-atom        999    Xx    "Dummy atom"                   1     1.0      9
-atom        999    Du    "Dummy atom"                   1     1.0      9
 
 
       ################################
@@ -289,5 +286,3 @@ vdw        115                3.2360     0.0110
 vdw        116                3.2360     0.0110
 vdw        117                3.2360     0.0110
 vdw        118                3.2360     0.0110
-#
-vdw        999                0.0000     0.0000

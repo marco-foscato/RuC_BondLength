@@ -215,8 +215,8 @@ fi
 
 ## Prepare input file for DFT
 cp "$DenoptimCG3Dout" "$SDFtoDFT"
-ACCmakeInpLog="$wrkDir/${fname}_mkInp.par"
-ACCmakeInpParFile="$wrkDir/${fname}_mkInp.log"
+ACCmakeInpLog="$wrkDir/${fname}_mkInp.log"
+ACCmakeInpParFile="$wrkDir/${fname}_mkInp.par"
 dftInpFile="$dftJobName.inp"
 echo "Preparing input file for DFT"
 # prepare param file
