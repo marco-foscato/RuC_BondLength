@@ -4,13 +4,14 @@ meant to generate ruthenium olefin metathesis catalysts with formula (L)Ru(Cl)(C
 
 ## Prerequisites and Preparation
 ### Overview
-The experiments were run on an HPC Linux cluster, but amost tasks, i.e., all excluding the highly computational demamding DFT computations can be reproduced on a regular laptop/workstation. The following software in needed to reproduce the experiments, and will be installed in the next section:
+The experiments were run on an HPC Linux cluster, but most tasks, i.e., all excluding the highly computational demamding DFT computations can be reproduced on a regular laptop/workstation. The following software in needed to reproduce the experiments, and will be installed in the next section:
 * <a href="https://github.com/denoptim-project/DENOPTIM">DENOPTIM 2.2.6</a> to run the evolutionary design and fragment space enumeration.
 * <a href="https://dasher.wustl.edu/tinker/">Tinker v6.3</a> for performing molecular mechanic calculations like conformational searches. **NB:** Tinker must be compiled with `maxval=12` in Tinker's source file `sizes.i`.
-* <a href="https://gaussian.com/">Gaussian 09</a> for running DFT calculations. We expect to run these experiments on a HPC cluster managed by a scheduler (either PBS or SLURM) and Gaussian jobs are submitted to the queue. Submission of the job is heavily machine- and user-specific so we will assume that a job submission BASH script exists and can be called by the [fitness provider script](evolutionary_desing/Ru_14-el_fitness_BndLng.sh).
+* <a href="https://gaussian.com/">Gaussian 09</a> for running DFT calculations. We expect to run these experiments on a HPC cluster managed by a scheduler and Gaussian jobs are submitted to the queue. Submission of the job is heavily machine- and user-specific so we will assume that a job submission command exists and can be called by the [fitness provider script](evolutionary_desing/Ru_14-el_fitness_BndLng.sh). This command is also charged with extraction of the last Cartesian coordinates from the Gaussian job and to write a corresponding XYZ file.
 * <a href="http://openbabel.org/wiki/Main_Page">OpenBabel</a> for chemical file format conversion.
-* <a href="">AutoCompChem</a> for performaning molecular modeling tasks automatically.
-* Java JDK-8 for running DENOPTIM and AutoCompChem
+* <a href="https://github.com/denoptim-project/AutoCompChem">AutoCompChem</a> for performaning molecular modeling tasks automatically.
+* An additional utility for calculating geometrical descriptors, checking geometrical contraints, and cumputing the numerical value of the fitness (`FitnessRuCH2BndLng`).
+* Java JDK-8 for running DENOPTIM, AutoCompChem, and FitnessRuCH2BndLng.
 
 ### Procedure
 1. The file [environment.yml](environment.yml) can be used to recreate the core of the environment, namely, install OpenBabel and Java JDK. This can be done with [conda](https://docs.conda.io/en/latest/index.html):
@@ -36,7 +37,14 @@ export TINKERBIN=/path/to/your/tinker/bin
 ```
 Also, we expect to run Gaussian via a queuing system. Therefore, we assume you have a way to submit Gaussian jobs (send them to the queuing system). This task is, in our case, performed by the `` command.
 
-4. Finally, export this variable pointing to the location of the `RuC_BondLength/evolutionary_desing` subfolder:
+4. The `FitnessRuCH2BndLng` utility is compiled with ease:
+```
+cd tools/FitnessRuCH2BndLng
+./build-fitnessruch2bndlng.sh
+cd ../..
+```
+
+5. Finally, export this variable pointing to the location of the `RuC_BondLength/evolutionary_desing` subfolder:
 ```
 export RUCBONDDESIGN=/your/path/to/RuC_BondLength/evolutionary_desing
 ```
