@@ -57,12 +57,11 @@ ACCpath="$RUCBONDDESIGN/../tools/AutoCompChem/"
 fitnessCalculatorPath="$RUCBONDDESIGN/../tools/FitnessRuCH2BndLng"
 
 #Gaussian
-submitDFTscript="submit_job_g16-C.01" #TODO: change back to 09
+submitDFTscript="submit_job_g16-C.01" #TODO back to submitDFTscript
 jobDetails="$RUCBONDDESIGN/jd_G09_Denoptim_1.1"
 nodes=1         # nodes
-cpn=16          # processors per node
+cpn=32          # processors per node
 wt=20           # walltime in hours
-mpn=32000       # memory per node
 minTime=30      # delay of first checking iteration
 minTimeUnit="m" # time unit: s (seconds), m (minutes), h (hours)
 step=5          # delay of each checking iteration
@@ -229,6 +228,8 @@ cp "$DenoptimCG3Dout" "$SDFtoDFT"
 ACCmakeInpLog="$wrkDir/${fname}_mkInp.log"
 ACCmakeInpParFile="$wrkDir/${fname}_mkInp.par"
 dftInpFile="$dftJobName.inp"
+dftOutFile="$dftJobName.out"
+dftLogFile="$dftJobName.log"
 echo "Preparing input file for DFT"
 # prepare param file
 echo "VERBOSITY: 1" > "$ACCmakeInpParFile"
@@ -255,14 +256,13 @@ if ! grep -q "Termination status: 0" "$ACCmakeInpLog" ; then
     exit $E_OPTERROR
 fi
 
-#TODO del
-exit 0
-
 ## Submit DFT geometry optimization
 echo "Submitting DFT"
 date
 cd "$wrkDir"
-jobID=$(/bin/bash $submitDFTscript "$SDFtoDFT" $jobDetails $nodes $cpn $wt $mpn)
+pwd
+echo "Running $submitDFTscript $(basename $dftInpFile) -n $nodes -t $wt"
+jobID=$("$submitDFTscript" "$(basename $dftInpFile)" -n $nodes -t $wt)
 #NB: this only works for SLURM. PBS queue may returns a different message
 if [[ "$jobID" == *"Batch job submission failed"* ]] ; then
     errmsg="#SubmitDFT: Batch job submission failed"
@@ -279,16 +279,16 @@ fi
 
 ## Wait for completion of DFT job (= creation of the "task complete label(TCL)")
 jobID=$(echo "$jobID" | grep "Submitted " | awk '{print $NF}')
-tcl="$wrkDir/tcl_$jobID"
 taskdone=1
 msg="";
 # Wait the minimum time before looping
 echo "Start waiting for completion of DFT: jobID $jobID"
-echo "Name of Task Complete Label: $tcl"
+echo "Waiting for string 'GAUSSIAN JOB ENDED' in '$dftLogFile'"
 sleep $minTime$minTimeUnit
 echo "First check for completion of DFT"
 date
-if [ -f "$tcl" ]; then
+# WARNING: this if.statment depends on the job submission script and its log. You might need to change it!
+if [ -f "$dftLogFile" ] && grep -q "GAUSSIAN JOB ENDED" "$dftLogFile" ; then
     echo "Job done: stop waiting"
     taskdone=0
 else
@@ -298,7 +298,7 @@ else
     do
        sleep $step$stepunit
        date
-       if [ -f "$tcl" ]
+       if [ -f "$dftLogFile" ] && grep -q "GAUSSIAN JOB ENDED" "$dftLogFile"
        then
           echo "Job completed: stop waiting"
           taskdone=0
@@ -312,22 +312,26 @@ else
           fi
        fi
     done
-fi   
-rm -f "$tcl"
-if [ ! -f "$XYZpostDFT" ]; then
-    errmsg="#WaitingDFT: "$XYZpostDFT" not found"
-    "$obabel" -isdf "$DenoptimCG3Dout" -osdf -O "$outSDF" --property "MOL_ERROR" "$errmsg"
-    exit $E_OPTERROR
 fi
-
 
 ## XYZ to SDF
 echo "Conversion of XYZ"
-echo "PostDFT XYZ: $XYZpostDFT"
-echo "PostDFT SDF: $SDFpostDFT"
-
+echo "DFT output file: $dftOutFile"
+echo "Making PostDFT XYZ: $XYZpostDFT"
+if [ ! -f "$dftOutFile" ]; then
+    errmsg="#DFTResults: file '$dftOutFile' not found"
+    "$obabel" -isdf "$DenoptimCG3Dout" -osdf -O "$outSDF" --property "MOL_ERROR" "$errmsg"
+    exit $E_OPTERROR 
+fi
+"$obabel" -ig09 "$dftOutFile" -oxyz -O "$XYZpostDFT"
+if [ $? != 0 ]; then
+    errmsg="#G09toXYZ failure: non-zero exit status"
+    "$obabel" -isdf "$DenoptimCG3Dout" -osdf -O "$outSDF" --property "MOL_ERROR" "$errmsg"
+    exit $E_OPTERROR
+fi
+echo "Making PostDFT SDF: $SDFpostDFT"
 #NB: here we rely on the connectivity perception of OpenBabel!
-$obabel -ixyz "$XYZpostDFT" -osdf -O "$SDFpostDFT"
+"$obabel" -ixyz "$XYZpostDFT" -osdf -O "$SDFpostDFT"
 if [ $? != 0 ]; then
     errmsg="#XYZtoSDF failure: non-zero exit status"
     "$obabel" -isdf "$DenoptimCG3Dout" -osdf -O "$outSDF" --property "MOL_ERROR" "$errmsg"
@@ -387,7 +391,7 @@ echo "Calculating descriptors and fitness"
 echo "INPSDF=$DenoptimCG3Dout" > "$fitParFile"
 echo "OUTSDF=$outSDF" >> "$fitParFile"
 echo "OPTSDF=$SDFpostDFT" >> "$fitParFile"
-echo "HPXYZ=$XYZpostDFT" >> "$fitParFile"v
+echo "HPXYZ=$XYZpostDFT" >> "$fitParFile"
 echo "MAXBNDDIST=2.50" >> "$fitParFile"
 echo "MINANGLE=90.0" >> "$fitParFile"
 echo "MAXTORSION=20" >> "$fitParFile"
@@ -413,6 +417,9 @@ cleanup "$ACCatmclshLog"
 cleanup "$ACCmakeInpParFile"
 cleanup "$ACCmakeInpLog"
 cleanup "$SDFtoDFT"
+cleanup "$dftJobName.job"
+cleanup "$dftJobName.jd"
+cleanup "$dftJobName.inp"
 #cleanup "$XYZpostDFT"
 cleanup "$SDFpostDFT"
 cleanup "$ACCconnectParFile"
@@ -421,4 +428,5 @@ cleanup "$fitParFile"
 #cleanup $log
 
 # Task done
+echo "All done!"
 exit 0
