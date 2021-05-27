@@ -23,9 +23,11 @@ FS-FragmentLibFile=../fragment_space/fragments.sdf
 FS-CappingFragmentLibFile=../fragment_space/capping_groups.sdf
 FS-CompMatrixFile=../fragment_space/compatibility_matrix.par
 FS-RotBondsDefFile=rotatableBonds-1.0
+FS-EnforceSymmetry
+
 FS-MaxHeavyAtom=50
 FS-MaxRotatableBond=20
-FS-EnforceSymmetry
+FS-MaxMW=10000
 
 # Fitness Provider - paramerers
 # Actual Provider

@@ -144,30 +144,27 @@ fitParFile="$wrkDir/${fname}_CalcFit.par"
 ## Calculation of 3D conformer using TINKER
 echo "Starting DenoptimCG"
 # prepare param file 
-echo "inpSDF=$inpSDF" > "$DenoptimCGParFile"
-echo "outSDF=$DenoptimCG3Dout" >> "$DenoptimCGParFile"
-echo "scaffoldLibFile=$scaffoldLib" >> "$DenoptimCGParFile"
-echo "fragmentLibFile=$fragmentLib" >> "$DenoptimCGParFile"
-echo "cappingFragmentLibFile=$cappingLib" >> "$DenoptimCGParFile"
-echo "compMatrix=$cpm" >> "$DenoptimCGParFile"
-echo "toolOpenBabel=$obabel" >> "$DenoptimCGParFile"
-echo "wrkDir=$wrkDir" >> "$DenoptimCGParFile"
+echo "CG-inpSDF=$inpSDF" > "$DenoptimCGParFile"
+echo "CG-outSDF=$DenoptimCG3Dout" >> "$DenoptimCGParFile"
+echo "CG-wrkDir=$wrkDir" >> "$DenoptimCGParFile"
+echo "FS-ScaffoldLibFile=$scaffoldLib" >> "$DenoptimCGParFile"
+echo "FS-FragmentLibFile=$fragmentLib" >> "$DenoptimCGParFile"
+echo "FS-CappingFragmentLibFile=$cappingLib" >> "$DenoptimCGParFile"
+echo "FS-CompMatrixFile=$cpm" >> "$DenoptimCGParFile"
 # definition of rotational space
-echo "ROTBONDSDEF=$rotSpaceDef" >> "$DenoptimCGParFile"
+echo "FS-RotBondsDefFile=$rotSpaceDef" >> "$DenoptimCGParFile"
 # location of the TINKER tools
-echo "PSSROT=$pathToTinkerBin/pssrot" >> "$DenoptimCGParFile"
-echo "XYZINT=$pathToTinkerBin/xyzint" >> "$DenoptimCGParFile"
-echo "INTXYZ=$pathToTinkerBin/intxyz" >> "$DenoptimCGParFile"
+echo "CG-ToolPSSROT=$pathToTinkerBin/pssrot" >> "$DenoptimCGParFile"
+echo "CG-ToolXYZINT=$pathToTinkerBin/xyzint" >> "$DenoptimCGParFile"
+echo "CG-ToolINTXYZ=$pathToTinkerBin/intxyz" >> "$DenoptimCGParFile"
 # param file used by Tinker
-echo "PARAM=$tinkerForceField" >> "$DenoptimCGParFile"
+echo "CG-ForceFieldFile=$tinkerForceField" >> "$DenoptimCGParFile"
 # key file to be used by tinker with PSSROT
 # this file is copied and edited for every molecule
-echo "KEYFILE=$tinkerKeyFile" >> "$DenoptimCGParFile"
+echo "CG-KeyFile=$tinkerKeyFile" >> "$DenoptimCGParFile"
 # parameters used by PSSROT
 # this file is copied and edited for every molecule
-echo "PSSROTPARAMS=$tinkerSubmitFile" >> "$DenoptimCGParFile"
-# Atom ordering scheme (1/2)
-echo "atomOrderingScheme=1" >> "$DenoptimCGParFile"
+echo "CG-PSSROTParams=$tinkerSubmitFile" >> "$DenoptimCGParFile"
 
 "$java" -jar "$pathToJarFiles/DenoptimCG.jar" "$DenoptimCGParFile"
 
