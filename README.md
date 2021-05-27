@@ -13,7 +13,7 @@ The experiments were run on an HPC Linux cluster, but most tasks, i.e., all excl
 * An additional utility for calculating geometrical descriptors, checking geometrical contraints, and cumputing the numerical value of the fitness (`FitnessRuCH2BndLng`).
 * Java JDK-8 for running DENOPTIM, AutoCompChem, and FitnessRuCH2BndLng.
 
-In addition, due to a limitation in the length of pathnames that Tinker can handle, you should make sure the path to the root of this folder is short (say, shorter than 10 chracters).
+In addition, due to a limitation in the length of pathnames that Tinker can handle, you should make sure the path to the root of this folder is short (say, shorter than 30 chracters).
 
 ### Procedure
 1. The file [environment.yml](environment.yml) can be used to recreate the core of the environment, namely, install OpenBabel and Java JDK. This can be done with [conda](https://docs.conda.io/en/latest/index.html):
