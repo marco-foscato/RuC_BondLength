@@ -43,10 +43,17 @@ tinkerKeyFile="$RUCBONDDESIGN/build_uff.key"
 tinkerSubmitFile="$RUCBONDDESIGN/submit_pssrot"
 rotSpaceDef="$RUCBONDDESIGN/rotatableBonds-1.0"
 
+#Sed syntax differs between GNU and BDS sed
+sedSyntax=GNU
+sed --version >/dev/null 2>&1
+if [ $? -ne 0 ]; then
+    sedSyntax=Other
+fi
+
 #AutoCompChem
 ACCpath="$RUCBONDDESIGN/../tools/AutoCompChem/"
 
-#
+#Fitness calculator
 fitnessCalculatorPath="$RUCBONDDESIGN/../tools/FitnessRuCH2BndLng"
 
 #Gaussian
@@ -178,8 +185,12 @@ fi
 
 ## Change He to H: needed only for special use of fragments bearing dummy He atoms
 echo "Changing He to H"
-sed -i 's/ He / H  /g' "$DenoptimCG3Dout"
-
+if [ "$sedSyntax" == "GNU" ]
+then
+    sed -i 's/ He / H  /g' "$DenoptimCG3Dout"
+else
+    sed -i '' 's/ He / H  /g' "$DenoptimCG3Dout"
+fi
 
 ## Check for AtomClashes
 echo "Starting AtomClash detector"
