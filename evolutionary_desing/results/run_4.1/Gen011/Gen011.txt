@@ -1,0 +1,41 @@
+#Name               GraphId             UID                           Fitness        Source 
+M00000015_FIT.sdf   17                  AHDVGFRAZYZKHO-QINIVFDNNA-L   -1.81559    /cluster/projects/nn2506k/marcof/RuC_BondLength/evolutionary_desing/RUN28052021044732/Gen000/M00000015_FIT.sdf
+M00000006_FIT.sdf   8                   GLKQTJCAQFKIIL-SJCLHABSNA-L   -1.81602    /cluster/projects/nn2506k/marcof/RuC_BondLength/evolutionary_desing/RUN28052021044732/Gen000/M00000006_FIT.sdf
+M00000083_FIT.sdf   96                  GLKQTJCAQFKIIL-SJCLHABSNA-L   -1.81602    /cluster/projects/nn2506k/marcof/RuC_BondLength/evolutionary_desing/RUN28052021044732/Gen010/M00000083_FIT.sdf
+M00000059_FIT.sdf   71                  HLHJVMZRSZULMA-PKHRRCNVNA-L   -1.81607    /cluster/projects/nn2506k/marcof/RuC_BondLength/evolutionary_desing/RUN28052021044732/Gen005/M00000059_FIT.sdf
+M00000024_FIT.sdf   29                  OWSGHDPJWOXQHR-MBDKQEGRNA-L   -1.81609    /cluster/projects/nn2506k/marcof/RuC_BondLength/evolutionary_desing/RUN28052021044732/Gen000/M00000024_FIT.sdf
+M00000060_FIT.sdf   72                  DWYZSNZJBJIKHA-ZYEQYMLTNA-L   -1.81610    /cluster/projects/nn2506k/marcof/RuC_BondLength/evolutionary_desing/RUN28052021044732/Gen005/M00000060_FIT.sdf
+M00000018_FIT.sdf   21                  IRLKOPOOUFBZQQ-GOAYGDJRNA-L   -1.81612    /cluster/projects/nn2506k/marcof/RuC_BondLength/evolutionary_desing/RUN28052021044732/Gen000/M00000018_FIT.sdf
+M00000081_FIT.sdf   94                  IRLKOPOOUFBZQQ-GOAYGDJRNA-L   -1.81612    /cluster/projects/nn2506k/marcof/RuC_BondLength/evolutionary_desing/RUN28052021044732/Gen009/M00000081_FIT.sdf
+M00000014_FIT.sdf   16                  DUDWNSCUKBSZKM-GWJWWXCFNA-L   -1.81630    /cluster/projects/nn2506k/marcof/RuC_BondLength/evolutionary_desing/RUN28052021044732/Gen000/M00000014_FIT.sdf
+M00000027_FIT.sdf   32                  DUDWNSCUKBSZKM-GWJWWXCFNA-L   -1.81630    /cluster/projects/nn2506k/marcof/RuC_BondLength/evolutionary_desing/RUN28052021044732/Gen000/M00000027_FIT.sdf
+M00000031_FIT.sdf   40                  DUDWNSCUKBSZKM-GWJWWXCFNA-L   -1.81630    /cluster/projects/nn2506k/marcof/RuC_BondLength/evolutionary_desing/RUN28052021044732/Gen000/M00000031_FIT.sdf
+M00000049_FIT.sdf   61                  DUDWNSCUKBSZKM-GWJWWXCFNA-L   -1.81630    /cluster/projects/nn2506k/marcof/RuC_BondLength/evolutionary_desing/RUN28052021044732/Gen003/M00000049_FIT.sdf
+M00000050_FIT.sdf   62                  ZDRIKRMBSHKRGS-JXFDZPSKNA-L   -1.81630    /cluster/projects/nn2506k/marcof/RuC_BondLength/evolutionary_desing/RUN28052021044732/Gen003/M00000050_FIT.sdf
+M00000054_FIT.sdf   66                  DUDWNSCUKBSZKM-GWJWWXCFNA-L   -1.81630    /cluster/projects/nn2506k/marcof/RuC_BondLength/evolutionary_desing/RUN28052021044732/Gen004/M00000054_FIT.sdf
+M00000062_FIT.sdf   74                  DUDWNSCUKBSZKM-GWJWWXCFNA-L   -1.81630    /cluster/projects/nn2506k/marcof/RuC_BondLength/evolutionary_desing/RUN28052021044732/Gen006/M00000062_FIT.sdf
+M00000067_FIT.sdf   79                  DUDWNSCUKBSZKM-GWJWWXCFNA-L   -1.81630    /cluster/projects/nn2506k/marcof/RuC_BondLength/evolutionary_desing/RUN28052021044732/Gen007/M00000067_FIT.sdf
+M00000071_FIT.sdf   83                  DUDWNSCUKBSZKM-GWJWWXCFNA-L   -1.81630    /cluster/projects/nn2506k/marcof/RuC_BondLength/evolutionary_desing/RUN28052021044732/Gen007/M00000071_FIT.sdf
+M00000072_FIT.sdf   84                  DUDWNSCUKBSZKM-GWJWWXCFNA-L   -1.81630    /cluster/projects/nn2506k/marcof/RuC_BondLength/evolutionary_desing/RUN28052021044732/Gen007/M00000072_FIT.sdf
+M00000073_FIT.sdf   85                  DUDWNSCUKBSZKM-GWJWWXCFNA-L   -1.81630    /cluster/projects/nn2506k/marcof/RuC_BondLength/evolutionary_desing/RUN28052021044732/Gen008/M00000073_FIT.sdf
+M00000079_FIT.sdf   92                  DUDWNSCUKBSZKM-GWJWWXCFNA-L   -1.81630    /cluster/projects/nn2506k/marcof/RuC_BondLength/evolutionary_desing/RUN28052021044732/Gen009/M00000079_FIT.sdf
+M00000084_FIT.sdf   97                  DUDWNSCUKBSZKM-GWJWWXCFNA-L   -1.81630    /cluster/projects/nn2506k/marcof/RuC_BondLength/evolutionary_desing/RUN28052021044732/Gen010/M00000084_FIT.sdf
+M00000088_FIT.sdf   102                 DUDWNSCUKBSZKM-GWJWWXCFNA-L   -1.81630    /cluster/projects/nn2506k/marcof/RuC_BondLength/evolutionary_desing/RUN28052021044732/Gen010/M00000088_FIT.sdf
+M00000074_FIT.sdf   86                  ZDRIKRMBSHKRGS-JXFDZPSKNA-L   -1.81631    /cluster/projects/nn2506k/marcof/RuC_BondLength/evolutionary_desing/RUN28052021044732/Gen008/M00000074_FIT.sdf
+M00000078_FIT.sdf   91                  ZDRIKRMBSHKRGS-JXFDZPSKNA-L   -1.81631    /cluster/projects/nn2506k/marcof/RuC_BondLength/evolutionary_desing/RUN28052021044732/Gen009/M00000078_FIT.sdf
+M00000007_FIT.sdf   9                   KQYINPZNJKGEFS-MAGRRSNANA-L   -1.81632    /cluster/projects/nn2506k/marcof/RuC_BondLength/evolutionary_desing/RUN28052021044732/Gen000/M00000007_FIT.sdf
+
+
+#####POPULATION SUMMARY#####
+SIZE:                                   25
+MAX:                          -1.81559
+MIN:                          -1.81632
+MEAN:                         -1.81621
+MEDIAN:                       -1.81630
+STDDEV:                       0.00017
+SKEW:                         2.28391
+
+
+#####SCAFFOLD ANALYSIS#####
+1 25
+
