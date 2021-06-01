@@ -1,0 +1,40 @@
+Mol_000160_FIT.sdf  1270                AZHFQZGDGMMFFD-XPIXOUDHNA-L       -1.81317
+Mol_000118_FIT.sdf  687                 LEXHDXXVFOWZTI-PCKHPXHVNA-L       -1.81320
+Mol_000174_FIT.sdf  1391                CYFBEVHSQYJYLU-PADDNMPHNA-L       -1.81324
+Mol_000109_FIT.sdf  599                 GHEVPVRQQMJLOH-IROAUWCYNA-L       -1.81326
+Mol_000105_FIT.sdf  562                 VILHPVVIBCHFGH-JVAVWKIENA-L       -1.81329
+Mol_000183_FIT.sdf  1516                RYFLBYFRSUOUDK-UZQZSPNXNA-L       -1.81331
+Mol_000101_FIT.sdf  531                 RWTSKQAXYARIRR-GNGGKSGQNA-L       -1.81338
+Mol_000057_FIT.sdf  113                 RCMJHSDZGPBAQA-QQNQBOQTNA-L       -1.81344
+Mol_000046_FIT.sdf  74                  HCIMLTKQRFQYQD-AIXSZDICNA-L       -1.81347
+Mol_000029_FIT.sdf  44                  OLIPSTQHCKTTID-PEUBUZDHNA-L       -1.81353
+Mol_000099_FIT.sdf  506                 APROFZWFIFEXGB-AOUFAXBXNA-L       -1.81359
+Mol_000087_FIT.sdf  312                 VFCZDMFVZPAKGR-BSYLSFLHNA-L       -1.81361
+Mol_000113_FIT.sdf  632                 VNOQCQXNSJXONS-LDZAIHNINA-L       -1.81370
+Mol_000141_FIT.sdf  964                 DXAVUDUXWITMDL-IMMVSVPVNA-L       -1.81370
+Mol_000131_FIT.sdf  906                 KJYHAAMHNFPVBK-CJBBLABZNA-L       -1.81399
+Mol_000069_FIT.sdf  203                 YPSFRFOHEWNFJH-ROYZPLOYNA-L       -1.81403
+Mol_000092_FIT.sdf  409                 OLYVDZLANOOIJP-VHGVXAHPNA-L       -1.81406
+Mol_000135_FIT.sdf  936                 WLAGFTITAGKYSZ-HKCKECOGNA-L       -1.81406
+Mol_000180_FIT.sdf  1448                XYEQLSBSQZPJFX-KPVVMORGNA-L       -1.81406
+Mol_000144_FIT.sdf  1024                RETYGHSNLPKVNE-PYPJUEKBNA-L       -1.81409
+Mol_000097_FIT.sdf  488                 QGMJBBOXYUAQIO-KRYKUKFKNA-L       -1.81411
+Mol_000085_FIT.sdf  306                 XQYBTFUYJALBFQ-DYWAHKDMNA-L       -1.81415
+Mol_000121_FIT.sdf  705                 LHVJNNJOPOQRGU-RVWCKMOLNA-L       -1.81415
+Mol_000143_FIT.sdf  998                 BLSDQCFPTBGSOS-VBZKUYHDNA-L       -1.81417
+Mol_000125_FIT.sdf  792                 NUYKGDDDZBTADR-NZTZZDQONA-L       -1.81421
+
+
+#####POPULATION SUMMARY#####
+SIZE:                                   25
+MAX:          -1.81317
+MIN:          -1.81421
+MEAN:                               -1.814
+MEDIAN:                             -1.814
+STDDEV:                              0.000
+SKEW:                                0.078
+
+
+#####SCAFFOLD ANALYSIS#####
+1 25
+

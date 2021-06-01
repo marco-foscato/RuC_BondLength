@@ -1,0 +1,40 @@
+Mol_000205_FIT.sdf  2544                CHPQENVMULBGTF-DHPWSTMENA-L       -1.81389
+Mol_000225_FIT.sdf  2780                UMNOXKMZSUZAEK-WYGNYDCJNA-L       -1.81405
+Mol_000193_FIT.sdf  2353                JJKNVVXZAGSFTL-QBDVBNPINA-L       -1.81416
+Mol_000217_FIT.sdf  2719                YKWUPUDJLJIDSR-WEYBQSPZNA-L       -1.81435
+Mol_000242_FIT.sdf  3020                FEFXWPSHSCJENM-WEBDFVGLNA-L       -1.81436
+Mol_000228_FIT.sdf  2796                RANSNKSCOUOPOU-QSBZBXGSNA-L       -1.81437
+Mol_000188_FIT.sdf  2299                BOMADLTYGWIASU-SVYYKOQVNA-L       -1.81456
+Mol_000040_FIT.sdf  89                  KYPRUDXCOTYBBU-AEDYDQRTNA-L       -1.81458
+Mol_000209_FIT.sdf  2629                FMSQQMSODBOHCH-JZPSOHBWNA-L       -1.81461
+Mol_000169_FIT.sdf  1983                ZOXKMQHBSOURPY-DNEQPIFCNA-L       -1.81471
+Mol_000214_FIT.sdf  2703                OUWZWUVZHNCQOF-FNYXVXLNNA-L       -1.81471
+Mol_000206_FIT.sdf  2548                ATNMOOVUUOXVDU-MZRKUBSXNA-L       -1.81490
+Mol_000245_FIT.sdf  3032                YQNSRRKMPWEMIS-ALCMAXGCNA-L       -1.81492
+Mol_000148_FIT.sdf  1639                XQIFDMCLYPVURE-LGXCFVNHNA-L       -1.81494
+Mol_000204_FIT.sdf  2543                IPWKGJCXQGMJMI-DHTCEHDRNA-L       -1.81494
+Mol_000088_FIT.sdf  496                 AMGGNCOTXZBZKV-STNULVGMNA-L       -1.81495
+Mol_000232_FIT.sdf  2845                GOXQXQPSTHGUIL-PPIZFZCZNA-L       -1.81501
+Mol_000189_FIT.sdf  2300                WTJRCMRVIWJBCQ-HHJDTDDUNA-L       -1.81502
+Mol_000033_FIT.sdf  63                  LRWYKDVPPKKMJQ-UXLUIVHQNA-L       -1.81503
+Mol_000042_FIT.sdf  108                 VMQBGLWRDTYMPG-WVZFRXBRNA-L       -1.81503
+Mol_000090_FIT.sdf  525                 GPPNGCIFVGZGBH-YJQKURBUNA-L       -1.81503
+Mol_000020_FIT.sdf  20                  NZLVIULAYQNJHG-RQDUNKCJNA-L       -1.81510
+Mol_000095_FIT.sdf  63                  WBVMBZDYTQTMPT-OCJOCIAZNA-L       -1.81510
+Mol_000143_FIT.sdf  1565                ZWECUATVJRYHHJ-VVBAKWBANA-L       -1.81512
+Mol_000200_FIT.sdf  2451                BGCZCVSCCVHZEC-XZUITFRTNA-L       -1.81513
+
+
+#####POPULATION SUMMARY#####
+SIZE:                                   25
+MAX:          -1.81389
+MIN:          -1.81513
+MEAN:                               -1.815
+MEDIAN:                             -1.815
+STDDEV:                              0.000
+SKEW:                                0.865
+
+
+#####SCAFFOLD ANALYSIS#####
+1 25
+

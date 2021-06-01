@@ -1,0 +1,40 @@
+Mol_000020_FIT.sdf  20                  NZLVIULAYQNJHG-RQDUNKCJNA-L       -1.81510
+Mol_000025_FIT.sdf  25                  FAHNUMXYUMIOSF-KFHPFWQCNA-L       -1.81529
+Mol_000008_FIT.sdf  8                   LWPGFZSOXMAUFV-TZPVBABUNA-L       -1.81558
+Mol_000007_FIT.sdf  7                   JHGKHORSHLXFEK-IJURXFEANA-L       -1.81598
+Mol_000009_FIT.sdf  9                   KXHDVOROXFPDOQ-MVZASNNJNA-L       -1.81602
+Mol_000001_FIT.sdf  1                   ZDRIKRMBSHKRGS-JXFDZPSKNA-L       -1.81613
+Mol_000013_FIT.sdf  13                  OBBZNMWMIANQQI-BSHKRJNDNA-L       -1.81616
+Mol_000016_FIT.sdf  16                  WCLGBFKSNPJLPV-VPOMINMUNA-L       -1.81619
+Mol_000017_FIT.sdf  17                  RJMRAIUYVYGACH-LVTGGBIMNA-L       -1.81632
+Mol_000024_FIT.sdf  24                  DUDWNSCUKBSZKM-UYGRORBLNA-L       -1.81645
+Mol_000005_FIT.sdf  5                   YUIZAZPGYGOCFK-FYBFLVNCNA-L       -1.81648
+Mol_000012_FIT.sdf  12                  VYSWMVLMKGNKFF-PXRSLDKWNA-L       -1.81653
+Mol_000004_FIT.sdf  4                   WIKFOPZKDJXHNV-QVZBHLANNA-L       -1.81656
+Mol_000015_FIT.sdf  15                  VRAOCJDOYVYGML-MTPZFFJSNA-L       -1.81663
+Mol_000022_FIT.sdf  22                  QZUYKYCYJQFQFW-RAJBRDDZNA-L       -1.81667
+Mol_000018_FIT.sdf  18                  YCZWHCUQNKPAQJ-DHVLEBGXNA-L       -1.81672
+Mol_000014_FIT.sdf  14                  JVAGIDLNQGMMAJ-BEOGFQKONA-L       -1.81675
+Mol_000023_FIT.sdf  23                  HFTNHBLPDXWFMB-WCXFTRGDNA-L       -1.81678
+Mol_000003_FIT.sdf  3                   IBBJQPAVIQGTIG-NPHKIWAZNA-L       -1.81705
+Mol_000019_FIT.sdf  19                  XSKDQAYOXRLWEN-NPQZMNTGNA-L       -1.81794
+Mol_000002_FIT.sdf  2                   TTWBJFXINBSBIA-SQWGKVRLNA-L       -1.81798
+Mol_000011_FIT.sdf  11                  KNVWYXDGJQFEHP-QLPVRFTENA-L       -1.81999
+Mol_000006_FIT.sdf  6                   SOZZWHFLZUANRO-IGOACRCHNA-L       -1.82001
+Mol_000010_FIT.sdf  10                  ZWTGGHCMQFCCMU-UOYIBJSSNA-L       -1.82050
+Mol_000021_FIT.sdf  21                  CHPXEIZVCKSJOO-IOSJFXCWNA-L       -1.82061
+
+
+#####POPULATION SUMMARY#####
+SIZE:                                   25
+MAX:          -1.81510
+MIN:          -1.82061
+MEAN:                               -1.817
+MEDIAN:                             -1.817
+STDDEV:                              0.002
+SKEW:                               -1.261
+
+
+#####SCAFFOLD ANALYSIS#####
+1 25
+

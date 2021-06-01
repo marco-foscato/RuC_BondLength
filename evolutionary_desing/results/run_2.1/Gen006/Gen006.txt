@@ -1,0 +1,40 @@
+Mol_000034_FIT.sdf  70                  ZWECUATVJRYHHJ-VVBAKWBANA-L       -1.81507
+Mol_000018_FIT.sdf  28                  OXSXRAPZRFPWLM-HIAQXSDKNA-L       -1.81514
+Mol_000050_FIT.sdf  354                 ZIEYWRJAXHGPAI-MOOKVRLUNA-L       -1.81515
+Mol_000049_FIT.sdf  336                 YUIZAZPGYGOCFK-FYBFLVNCNA-L       -1.81556
+Mol_000043_FIT.sdf  262                 DODNWUBRPSSWFY-YKKKFHEDNA-L       -1.81562
+Mol_000035_FIT.sdf  85                  UKSXNUMPOWWURM-YMRIFYENNA-L       -1.81563
+Mol_000019_FIT.sdf  30                  QEMHHCQIHZVKMF-PJAWHZMANA-L       -1.81593
+Mol_000044_FIT.sdf  276                 BSKWOSHFXZLHQJ-GFHUDXFUNA-L       -1.81600
+Mol_000046_FIT.sdf  288                 JECNSPGCAUPFOT-VVDXWTMCNA-L       -1.81604
+Mol_000009_FIT.sdf  11                  SUMHCCUIVKFHKD-TUUJROMDNA-L       -1.81607
+Mol_000020_FIT.sdf  32                  GABUTNVWYIKKGN-DMXFKKSSNA-L       -1.81614
+Mol_000033_FIT.sdf  69                  ZFTDYBQZBJNYFE-QRKOCCJUNA-L       -1.81614
+Mol_000001_FIT.sdf  1                   DUDWNSCUKBSZKM-UYGRORBLNA-L       -1.81625
+Mol_000047_FIT.sdf  300                 NERHGPOPCFQEPN-CPHLFKMGNA-L       -1.81625
+Mol_000051_FIT.sdf  423                 NVAOAHRFKHRWGT-DJCLOLHPNA-L       -1.81625
+Mol_000004_FIT.sdf  5                   ZDRIKRMBSHKRGS-JXFDZPSKNA-L       -1.81629
+Mol_000040_FIT.sdf  187                 MZHCDAINVFMSGS-JEVJCYHONA-L       -1.81629
+Mol_000016_FIT.sdf  25                  KVQKBTCPMMRJCS-RPKGSMOTNA-L       -1.81632
+Mol_000015_FIT.sdf  22                  VMOOIGBAFXNDRA-KTZSEAMZNA-L       -1.81633
+Mol_000003_FIT.sdf  4                   KXHDVOROXFPDOQ-MVZASNNJNA-L       -1.81640
+Mol_000007_FIT.sdf  8                   RJMRAIUYVYGACH-LVTGGBIMNA-L       -1.81641
+Mol_000011_FIT.sdf  15                  VYSWMVLMKGNKFF-PXRSLDKWNA-L       -1.81643
+Mol_000032_FIT.sdf  60                  ZJIXVWABBLNZPN-GHGYGKLSNA-L       -1.81658
+Mol_000022_FIT.sdf  37                  KHASRKNKDZVFSW-YNWTYQMBNA-L       -1.81690
+Mol_000021_FIT.sdf  33                  HFTNHBLPDXWFMB-WCXFTRGDNA-L       -1.81691
+
+
+#####POPULATION SUMMARY#####
+SIZE:                                   25
+MAX:                                -1.815
+MIN:                                -1.817
+MEAN:                               -1.816
+MEDIAN:                             -1.816
+STDDEV:                              0.000
+SKEW:                                0.599
+
+
+#####SCAFFOLD ANALYSIS#####
+1 25
+
