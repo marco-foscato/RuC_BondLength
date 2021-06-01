@@ -1,0 +1,40 @@
+Mol_000057_FIT.sdf  113                 RCMJHSDZGPBAQA-QQNQBOQTNA-L       -1.81344
+Mol_000046_FIT.sdf  74                  HCIMLTKQRFQYQD-AIXSZDICNA-L       -1.81347
+Mol_000029_FIT.sdf  44                  OLIPSTQHCKTTID-PEUBUZDHNA-L       -1.81353
+Mol_000069_FIT.sdf  203                 YPSFRFOHEWNFJH-ROYZPLOYNA-L       -1.81403
+Mol_000077_FIT.sdf  240                 URZDJXQCOXJSOK-FNMGSNPHNA-L       -1.81465
+Mol_000010_FIT.sdf  13                  VDKIGDNAOZGKDO-KGNQOPDYNA-L       -1.81488
+Mol_000045_FIT.sdf  73                  YMPFQKUHUUVMDS-ABEBCBRKNA-L       -1.81500
+Mol_000056_FIT.sdf  112                 ZWECUATVJRYHHJ-VVBAKWBANA-L       -1.81507
+Mol_000013_FIT.sdf  17                  XQIFDMCLYPVURE-LGXCFVNHNA-L       -1.81508
+Mol_000047_FIT.sdf  79                  OXSXRAPZRFPWLM-HIAQXSDKNA-L       -1.81514
+Mol_000005_FIT.sdf  8                   NGQIPVJDSCTVFY-SUKDNIOMNA-L       -1.81519
+Mol_000035_FIT.sdf  53                  ATFYEQZGRHLDNX-UAUCXSFFNA-L       -1.81547
+Mol_000066_FIT.sdf  196                 YVBGOCCQPCILFO-LUUZPNOQNA-L       -1.81563
+Mol_000017_FIT.sdf  21                  OFXUHSLDSMQTBJ-DHNOBLTNNA-L       -1.81569
+Mol_000037_FIT.sdf  59                  VHQJGONCSZAJSW-ZORFIMELNA-L       -1.81570
+Mol_000063_FIT.sdf  170                 HJOMAIUZAOBXPC-FWIIBIEONA-L       -1.81571
+Mol_000055_FIT.sdf  103                 BLIQTBGPHLEUQM-JAYIJYQCNA-L       -1.81578
+Mol_000053_FIT.sdf  90                  IXPVWAVUBRKYDL-ICLXOBQONA-L       -1.81579
+Mol_000003_FIT.sdf  5                   WCLGBFKSNPJLPV-VPOMINMUNA-L       -1.81580
+Mol_000039_FIT.sdf  62                  SZZCJWWKGKQZDK-CNDKHPDJNA-L       -1.81591
+Mol_000026_FIT.sdf  37                  OBBZNMWMIANQQI-BSHKRJNDNA-L       -1.81600
+Mol_000022_FIT.sdf  28                  SDOKIEHWMGKCFG-MLANFSQKNA-L       -1.81601
+Mol_000064_FIT.sdf  181                 WNNUWEBMFPSCHA-QCDMXPRONA-L       -1.81601
+Mol_000068_FIT.sdf  202                 NZLVIULAYQNJHG-RQDUNKCJNA-L       -1.81601
+Mol_000075_FIT.sdf  225                 PKZULKHJYAOLND-OBXIZYIVNA-L       -1.81602
+
+
+#####POPULATION SUMMARY#####
+SIZE:                                   25
+MAX:          -1.81344
+MIN:          -1.81602
+MEAN:                               -1.815
+MEDIAN:                             -1.816
+STDDEV:                              0.001
+SKEW:                                1.116
+
+
+#####SCAFFOLD ANALYSIS#####
+1 25
+

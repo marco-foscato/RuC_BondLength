@@ -1,0 +1,40 @@
+Mol_000299_FIT.sdf  3572                QLXLWEHZRUTKCD-KALMYZMJNA-L       -1.81260
+Mol_000306_FIT.sdf  3612                AJHPJMMRMGYHKN-PPRVZKSWNA-L       -1.81271
+Mol_000369_FIT.sdf  4827                CBLZYFORGHESQT-OGWSAOSKNA-L       -1.81272
+Mol_000300_FIT.sdf  3573                AROVPQQKADFVNT-XRZQJQMXNA-L       -1.81278
+Mol_000297_FIT.sdf  3568                KZDUJRZBMVGYGN-RKVYYFPHNA-L       -1.81284
+Mol_000318_FIT.sdf  3721                GCJNLKCMSBUFPK-OBZAUHQTNA-L       -1.81285
+Mol_000302_FIT.sdf  3591                CNAMEZCAYHTHNJ-RJBRCUDLNA-L       -1.81300
+Mol_000320_FIT.sdf  3732                XHMREEIPVWKFRX-CVWWCIMQNA-L       -1.81300
+Mol_000254_FIT.sdf  3181                YLMQXOVLWOAYCG-QRLYJIEANA-L       -1.81302
+Mol_000274_FIT.sdf  3407                OKVLWBAIRHCQFH-HCYWFMEHNA-L       -1.81304
+Mol_000289_FIT.sdf  3498                WRSRNIVUKPRWOT-SXDSOBHWNA-L       -1.81313
+Mol_000310_FIT.sdf  3637                BMCYCWGGCYYGNT-ULHHYFNINA-L       -1.81313
+Mol_000340_FIT.sdf  4151                MOAIAPDRHUJRQP-NCGUVWBFNA-L       -1.81313
+Mol_000341_FIT.sdf  4182                HCWNGCFIKWIGLT-DFZDLPHWNA-L       -1.81314
+Mol_000288_FIT.sdf  3476                SKINZUWVVITCTI-OMGAHDPKNA-L       -1.81318
+Mol_000267_FIT.sdf  3383                RPTHVAJFSQZMPW-XLFGGKCNNA-L       -1.81320
+Mol_000359_FIT.sdf  4577                SIPVYHMXLMIRCR-SZTFQZGINA-L       -1.81320
+Mol_000370_FIT.sdf  4837                NYAOXQODDJMURF-FJQWOQDPNA-L       -1.81324
+Mol_000330_FIT.sdf  3847                IUGPIZSVPZYYAU-OHSYRNMBNA-L       -1.81329
+Mol_000281_FIT.sdf  3181                OEMIRZBUVPQXTO-NRABKLOUNA-L       -1.81351
+Mol_000332_FIT.sdf  3943                ACMPLCSJABKKKU-TWQQNQQENA-L       -1.81359
+Mol_000303_FIT.sdf  3599                MNFKSNLPTAFURB-XNRKFYNTNA-L       -1.81365
+Mol_000269_FIT.sdf  3393                ROHZDYYMUGXDRU-MVCOVVDGNA-L       -1.81369
+Mol_000205_FIT.sdf  2544                CHPQENVMULBGTF-DHPWSTMENA-L       -1.81389
+Mol_000225_FIT.sdf  2780                UMNOXKMZSUZAEK-WYGNYDCJNA-L       -1.81405
+
+
+#####POPULATION SUMMARY#####
+SIZE:                                   25
+MAX:          -1.81260
+MIN:          -1.81405
+MEAN:                               -1.813
+MEDIAN:                             -1.813
+STDDEV:                              0.000
+SKEW:                               -0.643
+
+
+#####SCAFFOLD ANALYSIS#####
+1 25
+

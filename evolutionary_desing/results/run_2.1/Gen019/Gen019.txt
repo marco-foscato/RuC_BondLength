@@ -1,0 +1,40 @@
+Mol_000107_FIT.sdf  1622                ZSGUVBRDZGFBFU-ADXDKIKANA-L       -1.81476
+Mol_000097_FIT.sdf  1553                SNJPOMDXDPXJBY-PDJLUOEYNA-L       -1.81480
+Mol_000082_FIT.sdf  1386                TVSCRSKENNULAQ-OFKMGAANNA-L       -1.81481
+Mol_000103_FIT.sdf  1601                JXTUGQBQKNBDKE-YSRGOIGXNA-L       -1.81481
+Mol_000034_FIT.sdf  70                  ZWECUATVJRYHHJ-VVBAKWBANA-L       -1.81507
+Mol_000070_FIT.sdf  954                 XQIFDMCLYPVURE-LGXCFVNHNA-L       -1.81508
+Mol_000090_FIT.sdf  1540                PQQLNWJBGZZCGS-RDWLFUETNA-L       -1.81511
+Mol_000018_FIT.sdf  28                  OXSXRAPZRFPWLM-HIAQXSDKNA-L       -1.81514
+Mol_000050_FIT.sdf  354                 ZIEYWRJAXHGPAI-MOOKVRLUNA-L       -1.81515
+Mol_000053_FIT.sdf  448                 WILUPJQTCDFSEZ-CNMURRSPNA-L       -1.81540
+Mol_000049_FIT.sdf  336                 YUIZAZPGYGOCFK-FYBFLVNCNA-L       -1.81556
+Mol_000114_FIT.sdf  1666                VOTIJILRTQOIEN-ADDGCFOQNA-L       -1.81560
+Mol_000043_FIT.sdf  262                 DODNWUBRPSSWFY-YKKKFHEDNA-L       -1.81562
+Mol_000035_FIT.sdf  85                  UKSXNUMPOWWURM-YMRIFYENNA-L       -1.81563
+Mol_000091_FIT.sdf  1541                RVESXTHRBDTIRD-SCZIVMOGNA-L       -1.81565
+Mol_000093_FIT.sdf  1543                JXIXOGZJCYVAFC-JZLOSZPWNA-L       -1.81567
+Mol_000052_FIT.sdf  424                 OFXUHSLDSMQTBJ-DHNOBLTNNA-L       -1.81569
+Mol_000056_FIT.sdf  511                 JZYJUGRGKJFICS-BPUTUZEWNA-L       -1.81585
+Mol_000089_FIT.sdf  1535                NYECCVONWZYUHQ-QXQKDTHGNA-L       -1.81587
+Mol_000099_FIT.sdf  1586                MKRURQOKCZBBQL-ILCQIJDFNA-L       -1.81587
+Mol_000112_FIT.sdf  1650                GNUGPZQPMJAIJW-MYPFUKLFNA-L       -1.81589
+Mol_000054_FIT.sdf  502                 LWPGFZSOXMAUFV-TZPVBABUNA-L       -1.81591
+Mol_000019_FIT.sdf  30                  QEMHHCQIHZVKMF-PJAWHZMANA-L       -1.81593
+Mol_000042_FIT.sdf  261                 PTYQONRGQADOMA-PICZGMKXNA-L       -1.81595
+Mol_000044_FIT.sdf  276                 BSKWOSHFXZLHQJ-GFHUDXFUNA-L       -1.81600
+
+
+#####POPULATION SUMMARY#####
+SIZE:                                   25
+MAX:                                -1.815
+MIN:                                -1.816
+MEAN:                               -1.815
+MEDIAN:                             -1.816
+STDDEV:                              0.000
+SKEW:                                0.445
+
+
+#####SCAFFOLD ANALYSIS#####
+1 25
+

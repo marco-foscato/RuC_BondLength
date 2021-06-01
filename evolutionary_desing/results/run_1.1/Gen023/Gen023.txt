@@ -1,0 +1,40 @@
+Mol_000040_FIT.sdf  89                  KYPRUDXCOTYBBU-AEDYDQRTNA-L       -1.81458
+Mol_000169_FIT.sdf  1983                ZOXKMQHBSOURPY-DNEQPIFCNA-L       -1.81471
+Mol_000148_FIT.sdf  1639                XQIFDMCLYPVURE-LGXCFVNHNA-L       -1.81494
+Mol_000088_FIT.sdf  496                 AMGGNCOTXZBZKV-STNULVGMNA-L       -1.81495
+Mol_000033_FIT.sdf  63                  LRWYKDVPPKKMJQ-UXLUIVHQNA-L       -1.81503
+Mol_000042_FIT.sdf  108                 VMQBGLWRDTYMPG-WVZFRXBRNA-L       -1.81503
+Mol_000090_FIT.sdf  525                 GPPNGCIFVGZGBH-YJQKURBUNA-L       -1.81503
+Mol_000020_FIT.sdf  20                  NZLVIULAYQNJHG-RQDUNKCJNA-L       -1.81510
+Mol_000095_FIT.sdf  63                  WBVMBZDYTQTMPT-OCJOCIAZNA-L       -1.81510
+Mol_000143_FIT.sdf  1565                ZWECUATVJRYHHJ-VVBAKWBANA-L       -1.81512
+Mol_000058_FIT.sdf  212                 ZCACJLGTBOJJAT-YWOMLNDUNA-L       -1.81527
+Mol_000178_FIT.sdf  2124                GXNLMVBRLJMDKQ-NYQCAIJONA-L       -1.81528
+Mol_000025_FIT.sdf  25                  FAHNUMXYUMIOSF-KFHPFWQCNA-L       -1.81529
+Mol_000085_FIT.sdf  466                 MLGQWBLTKCLZCV-PBEFAXLGNA-L       -1.81531
+Mol_000037_FIT.sdf  84                  AMUNNEVWGIMSJS-CUEGUXKQNA-L       -1.81532
+Mol_000157_FIT.sdf  1785                BOBQJKPMVNXEKX-KHAYUSQXNA-L       -1.81539
+Mol_000093_FIT.sdf  544                 ZYTYYDMHTFCGSH-MMSHFBCMNA-L       -1.81540
+Mol_000161_FIT.sdf  1839                ATFYEQZGRHLDNX-UAUCXSFFNA-L       -1.81540
+Mol_000054_FIT.sdf  194                 SKQCQVSGYZYCFJ-WGCRFNMKNA-L       -1.81547
+Mol_000070_FIT.sdf  295                 NSOYBHWQBQOCHL-CHJQXKBLNA-L       -1.81548
+Mol_000182_FIT.sdf  2193                XPKCYBJGUBQJKJ-QZBYOCILNA-L       -1.81553
+Mol_000008_FIT.sdf  8                   LWPGFZSOXMAUFV-TZPVBABUNA-L       -1.81558
+Mol_000049_FIT.sdf  172                 LQNMBEBCOPZPHO-QJFKONLJNA-L       -1.81561
+Mol_000077_FIT.sdf  363                 HOXFSOFSEOAFMT-WHNMCNESNA-L       -1.81562
+Mol_000055_FIT.sdf  195                 GATOCTYKEFSARM-MGMBCIKINA-L       -1.81570
+
+
+#####POPULATION SUMMARY#####
+SIZE:                                   25
+MAX:          -1.81458
+MIN:          -1.81570
+MEAN:                               -1.815
+MEDIAN:                             -1.815
+STDDEV:                              0.000
+SKEW:                                0.497
+
+
+#####SCAFFOLD ANALYSIS#####
+1 25
+

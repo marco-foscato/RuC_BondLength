@@ -1,0 +1,40 @@
+Mol_000040_FIT.sdf  89                  KYPRUDXCOTYBBU-AEDYDQRTNA-L       -1.81458
+Mol_000033_FIT.sdf  63                  LRWYKDVPPKKMJQ-UXLUIVHQNA-L       -1.81503
+Mol_000042_FIT.sdf  108                 VMQBGLWRDTYMPG-WVZFRXBRNA-L       -1.81503
+Mol_000020_FIT.sdf  20                  NZLVIULAYQNJHG-RQDUNKCJNA-L       -1.81510
+Mol_000058_FIT.sdf  212                 ZCACJLGTBOJJAT-YWOMLNDUNA-L       -1.81527
+Mol_000025_FIT.sdf  25                  FAHNUMXYUMIOSF-KFHPFWQCNA-L       -1.81529
+Mol_000085_FIT.sdf  466                 MLGQWBLTKCLZCV-PBEFAXLGNA-L       -1.81531
+Mol_000037_FIT.sdf  84                  AMUNNEVWGIMSJS-CUEGUXKQNA-L       -1.81532
+Mol_000054_FIT.sdf  194                 SKQCQVSGYZYCFJ-WGCRFNMKNA-L       -1.81547
+Mol_000070_FIT.sdf  295                 NSOYBHWQBQOCHL-CHJQXKBLNA-L       -1.81548
+Mol_000008_FIT.sdf  8                   LWPGFZSOXMAUFV-TZPVBABUNA-L       -1.81558
+Mol_000049_FIT.sdf  172                 LQNMBEBCOPZPHO-QJFKONLJNA-L       -1.81561
+Mol_000077_FIT.sdf  363                 HOXFSOFSEOAFMT-WHNMCNESNA-L       -1.81562
+Mol_000055_FIT.sdf  195                 GATOCTYKEFSARM-MGMBCIKINA-L       -1.81570
+Mol_000081_FIT.sdf  387                 IRDCHGAOJXRTQX-CBKATBCYNA-L       -1.81570
+Mol_000062_FIT.sdf  221                 NXLMHAKPJRDIKX-IRCXZEDUNA-L       -1.81578
+Mol_000007_FIT.sdf  7                   JHGKHORSHLXFEK-IJURXFEANA-L       -1.81598
+Mol_000009_FIT.sdf  9                   KXHDVOROXFPDOQ-MVZASNNJNA-L       -1.81602
+Mol_000068_FIT.sdf  278                 LZSPAMMYJZANCC-DXJQLOEGNA-L       -1.81608
+Mol_000048_FIT.sdf  171                 VXPMRTOOZDFGGJ-SIUMYTCUNA-L       -1.81612
+Mol_000001_FIT.sdf  1                   ZDRIKRMBSHKRGS-JXFDZPSKNA-L       -1.81613
+Mol_000030_FIT.sdf  45                  OUMTYWKXMHTHHV-RWGIDYIZNA-L       -1.81614
+Mol_000082_FIT.sdf  436                 SGOZCOJUHDJJJP-GJNZAUEQNA-L       -1.81615
+Mol_000013_FIT.sdf  13                  OBBZNMWMIANQQI-BSHKRJNDNA-L       -1.81616
+Mol_000016_FIT.sdf  16                  WCLGBFKSNPJLPV-VPOMINMUNA-L       -1.81619
+
+
+#####POPULATION SUMMARY#####
+SIZE:                                   25
+MAX:          -1.81458
+MIN:          -1.81619
+MEAN:                               -1.816
+MEDIAN:                             -1.816
+STDDEV:                              0.000
+SKEW:                                0.442
+
+
+#####SCAFFOLD ANALYSIS#####
+1 25
+

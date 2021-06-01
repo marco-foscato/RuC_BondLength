@@ -1,0 +1,40 @@
+Mol_000263_FIT.sdf  3532                YNNJSTMNJGCPML-OCYIHFHFNA-L       -1.81310
+Mol_000298_FIT.sdf  3923                LEXHDXXVFOWZTI-PCKHPXHVNA-L       -1.81320
+Mol_000301_FIT.sdf  3985                KTMYVLBYFLSKQE-VKTYCXFZNA-L       -1.81320
+Mol_000308_FIT.sdf  4151                AQQFAUSWNYLRLV-KADBRBQUNA-L       -1.81328
+Mol_000259_FIT.sdf  3485                WETFSWACPOJAKD-ZFYOZPCBNA-L       -1.81333
+Mol_000295_FIT.sdf  3903                HHTOXTHINRUBJJ-GMZPCFNONA-L       -1.81336
+Mol_000257_FIT.sdf  3476                WWKOTCXOOVFGAW-FCYRLADBNA-L       -1.81338
+Mol_000245_FIT.sdf  3193                RCMJHSDZGPBAQA-QQNQBOQTNA-L       -1.81344
+Mol_000267_FIT.sdf  3552                OLIPSTQHCKTTID-PEUBUZDHNA-L       -1.81353
+Mol_000182_FIT.sdf  2322                KJYHAAMHNFPVBK-CJBBLABZNA-L       -1.81399
+Mol_000178_FIT.sdf  2301                WLCZNZUVGWQWCG-DSYUSTGVNA-L       -1.81403
+Mol_000258_FIT.sdf  3477                YPSFRFOHEWNFJH-ROYZPLOYNA-L       -1.81403
+Mol_000253_FIT.sdf  3453                WLAGFTITAGKYSZ-HKCKECOGNA-L       -1.81406
+Mol_000193_FIT.sdf  2392                OTITZTGUZACZQB-HRVVDCJSNA-L       -1.81407
+Mol_000243_FIT.sdf  3117                FVEYAXRWXYBYAQ-SLROHISQNA-L       -1.81447
+Mol_000284_FIT.sdf  3773                JNXCRLYPCLQIBC-DGFQPMJKNA-L       -1.81465
+Mol_000292_FIT.sdf  3868                URZDJXQCOXJSOK-FNMGSNPHNA-L       -1.81465
+Mol_000157_FIT.sdf  2133                ZWVLTOZENQUYKZ-PUEPZITONA-L       -1.81472
+Mol_000116_FIT.sdf  1679                YAZXXTQEGBFQQS-HUIDJTFGNA-L       -1.81475
+Mol_000107_FIT.sdf  1622                ZSGUVBRDZGFBFU-ADXDKIKANA-L       -1.81476
+Mol_000275_FIT.sdf  3685                GDTMSMUEUQSGKH-RJUPXWJGNA-L       -1.81476
+Mol_000201_FIT.sdf  2439                RBKMLBXDPMBEKO-SEMXGQSGNA-L       -1.81477
+Mol_000124_FIT.sdf  1743                DDQXPKXHUDZDKE-SEMQYIIHNA-L       -1.81479
+Mol_000291_FIT.sdf  3864                NYNQWDQZNRLWGE-WXMNUSTKNA-L       -1.81479
+Mol_000097_FIT.sdf  1553                SNJPOMDXDPXJBY-PDJLUOEYNA-L       -1.81480
+
+
+#####POPULATION SUMMARY#####
+SIZE:                                   25
+MAX:                                -1.813
+MIN:                                -1.815
+MEAN:                               -1.814
+MEDIAN:                             -1.814
+STDDEV:                              0.001
+SKEW:                                0.195
+
+
+#####SCAFFOLD ANALYSIS#####
+1 25
+
