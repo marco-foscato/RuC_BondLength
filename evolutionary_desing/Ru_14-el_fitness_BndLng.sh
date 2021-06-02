@@ -9,7 +9,7 @@
 
 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#
 #                                                             #
-# WARNING! Alternatively, make sure that the following        #
+# WARNING! Make sure that the following                       #
 #          parameters are in agreement with those given       #
 #          to DENOPTIM (<name>.params file)                   # 
 #                                                             #
@@ -24,6 +24,12 @@ scaffoldLib="$RUCBONDDESIGN/../fragment_space/scaffold.sdf"
 fragmentLib="$RUCBONDDESIGN/../fragment_space/fragments.sdf"
 cappingLib="$RUCBONDDESIGN/../fragment_space/capping_groups.sdf"
 cpm="$RUCBONDDESIGN/../fragment_space/compatibility_matrix.par"
+
+#Handling of duplicates
+allowDuplicates=1 #0 for yes, 1 for no
+
+#Data from previous runs - if a candidate UID has been already evaluated it will be found here
+previousResults="$RUCBONDDESIGN/results/run_*"
 
 #Setting for the execution of DENOPTIM tools
 java="java"
@@ -94,12 +100,12 @@ function cleanup() {
 }
 
     
-if [ "$#" -lt 4 ]
+if [ "$#" -lt 5 ]
 then
     echo " "
     echo "Usage: `basename $0` required number of arguments not supplied"	
     echo "4 parameters must be supplied (in this order):"
-    echo " <inputFileName.sdf>  <outputFileName.sdf> <workingDirectory> <taskID>"
+    echo " <inputFileName.sdf>  <outputFileName.sdf> <workingDirectory> <taskID> <UIDFile>"
     echo " "
     exit 1
 fi
@@ -114,8 +120,10 @@ wrkDir="$3"
 locDir="$(pwd)"
 # Task ID (useless number in this context, but DENOPTIM will spit it out anyway)
 taskId="$4"
+UIDFILE="$5"
 
 fname=$(basename "$inpSDF" .sdf)
+molName=$(basename "$inpSDF" _I.sdf)
 
 #Log of this script
 log="$wrkDir/${fname}_FProvider.log"
@@ -147,7 +155,66 @@ ACCconnectOut="$wrkDir/${fname}_ConnectCheck.out"
 #Fitnes calculation
 fitParFile="$wrkDir/${fname}_CalcFit.par"
 
-## Calculation of 3D conformer using TINKER
+#
+# Create UID from input mol
+#
+if ! grep -q "<UID>" "$inpSDF" 
+then
+    errmsg="#GrepUID: no UID found"
+    "$obabel" -isdf "$inpSDF" -osdf -O "$outSDF" --property "MOL_ERROR" "$errmsg"
+    exit $E_FATAL
+fi
+MOLUID="$( grep -A1 "<UID>" "$inpSDF" | tail -n 1)"
+uidFile="$wrkDir/${molNum}.uid"
+echo "$MOLUID" > "$uidFile"
+if [ "$allowDuplicates" == 1 ]
+then
+    echo "Generating UID for $molNum..."
+    "$java" -jar "$pathToJarFiles/UpdateUID.jar" -m "$uidFile" -s "$inpSDF" -k "$UIDFILE"
+    if grep -q "Already exists." "$inpSDF"
+    then
+        echo "UpdateUID: duplicate candidate."
+        cp "$inpSDF" "$outSDF"
+        echo "All done!"
+        exit $E_OPTERROR
+    elif grep -q "MOL_ERROR" "$inpSDF"
+    then
+        echo "UpdateUID: ERROR from checking UID"
+        cp "$inpSDF" "$outSDF"
+        exit $E_FATAL 
+    fi
+fi
+
+#
+# Use results from previous evaluation of this candidate (if available)
+#
+echo "Searching for UID=$MOLUID in $previousResults"
+fitFilesFromPreviousRun="$( find $previousResults -name "*_FIT.sdf" -exec grep -l "$MOLUID" {} \; | xargs grep -l "FITNESS" )"
+ if [[ -n $fitFilesFromPreviousRun ]]
+then
+    echo "Trying to fetch fitness from ${fitFilesFromPreviousRun}."
+    firstFitFile="$( ls $fitFilesFromPreviousRun -rlt | awk '{print $9}' | head -n 1 )"
+    preOutSDF="${outSDF}_pre"
+    cat "$firstFitFile" > "$preOutSDF"
+    firstXYZFile="$(basename $firstFitFile _FIT.sdf)_DFT.xyz"
+    if [ -f "$firstXYZFile" ]
+    then
+        cp "$firstXYZFile" "$XYZpostDFT"
+    fi 
+    prevMolName="$( head -n 1 $firstFitFile )"
+    if [ "$sedSyntax" == "GNU" ]
+    then
+        sed -i "s/$prevMolName/$molName/g" "$preOutSDF"
+    else
+        sed -i '' "s/$prevMolName/$molName/g" "$preOutSDF"
+    fi
+    echo "Fitness collected from previous run: $firstFitFile"
+    mv "$preOutSDF" "$outSDF"
+    echo "All done!"
+    exit 0
+fi
+
+## calculation of 3D conformer using TINKER
 echo "Starting DenoptimCG"
 # prepare param file 
 echo "CG-inpSDF=$inpSDF" > "$DenoptimCGParFile"
@@ -409,6 +476,7 @@ fi
 
 # cleanup 
 echo "Cleanup" >> "$log"
+cleanup "$uidFile"
 cleanup "$LookIn3DDBParFile"
 cleanup "$DenoptimCGParFile"
 #cleanup "$DenoptimCG3Dout"

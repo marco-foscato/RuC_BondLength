@@ -10,6 +10,10 @@
 cd ..
 rm -rf RUN-TEST
 cp -r test/RUN-TEST_tmpl RUN-TEST
+
+# To simulate duplicate in list of UIDs (when using M00000005_I.sdf)
+#echo "_Fake_JCMSDGLIPMNPGG-PWDOISHDNA-L" > RUN-TEST/MOLUID.txt
+
 dir="$(pwd)"
 # This is a "small" molecule: it takes ca. 10 minutes to run on 40 cpus at saga.sigma2.no
 bash Ru_14-el_fitness_BndLng.sh "$dir/RUN-TEST/Gen000/M00000005_I.sdf" "$dir/RUN-TEST/Gen000/M00000005_FIT.sdf" "$dir/RUN-TEST/Gen000" 5 "$dir/RUN-TEST/MOLUID.txt"
@@ -17,3 +21,5 @@ bash Ru_14-el_fitness_BndLng.sh "$dir/RUN-TEST/Gen000/M00000005_I.sdf" "$dir/RUN
 # For a larger molecule (takes a bit more than an hour on 40 cpus at saga-sigma2.no)
 #bash Ru_14-el_fitness_BndLng.sh "$dir/RUN-TEST/Gen000/M00000002_I.sdf" "$dir/RUN-TEST/Gen000/M00000002_FIT.sdf" "$dir/RUN-TEST/Gen000" 2 "$dir/RUN-TEST/MOLUID.txt"
 
+# A molecule that exists already in the results (super fast)
+#bash Ru_14-el_fitness_BndLng.sh "$dir/RUN-TEST/Gen000/M00000231_I.sdf" "$dir/RUN-TEST/Gen000/M00000231_FIT.sdf" "$dir/RUN-TEST/Gen000" 231 "$dir/RUN-TEST/MOLUID.txt"
