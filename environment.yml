@@ -2,6 +2,12 @@ name: Ru-C_Design
 channels:
   - defaults
   - openbabel
+  - rdkit
+  - anaconda
 dependencies:
   - openbabel
   - openjdk=8.0.152
+  - jupyterlab
+  - ipykernel
+  - rdkit
+  - matplotlib

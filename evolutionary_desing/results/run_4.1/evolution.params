@@ -1,5 +1,5 @@
 # Genetic Algorithm - paramerers
-GA-RandomSeed=26428
+GA-RandomSeed=17531
 GA-PrecisionLevel=5
 GA-PrintLevel=0
 GA-PopulationSize=25
@@ -11,7 +11,7 @@ GA-GrowthMultiplier=1.0
 GA-GrowthSigmaSteepness=2.0
 GA-GrowthSigmaMiddle=1.0
 GA-XOverSelectionMode=TS
-GA-CrossoverProbability=0.75
+GA-CrossoverProbability=0.60
 GA-MutationProbability=0.75
 GA-SymmetryProbability=1.0
 GA-ReplacementStrategy=ELITIST

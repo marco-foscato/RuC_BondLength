@@ -18,6 +18,8 @@ GA-ReplacementStrategy=ELITIST
 GA-NumParallelTasks=5
 GA-Parallelization=Asynchronous
 
+GA-InitPoplnFile=best_from_run_1.0.sdf
+
 # Fragment Space - paramerers
 FS-ScaffoldLibFile=../fragment_space/scaffold.sdf
 FS-FragmentLibFile=../fragment_space/fragments.sdf

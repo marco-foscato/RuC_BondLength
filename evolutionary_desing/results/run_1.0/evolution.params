@@ -1,0 +1,35 @@
+# Genetic Algorithm - paramerers
+GA-PrecisionLevel=5
+GA-PrintLevel=0
+GA-PopulationSize=25
+GA-NumChildren=5
+GA-NumGenerations=100
+GA-NumConvGen=5
+GA-GrowthProbScheme=SIGMA
+GA-GrowthMultiplier=1.0
+GA-GrowthSigmaSteepness=2.0
+GA-GrowthSigmaMiddle=1.0
+GA-XOverSelectionMode=TS
+GA-CrossoverProbability=0.75
+GA-MutationProbability=0.75
+GA-SymmetryProbability=1.0
+GA-ReplacementStrategy=ELITIST
+GA-NumParallelTasks=5
+GA-Parallelization=Asynchronous
+
+# Fragment Space - paramerers
+FS-ScaffoldLibFile=../fragment_space/scaffold.sdf
+FS-FragmentLibFile=../fragment_space/fragments.sdf
+FS-CappingFragmentLibFile=../fragment_space/capping_groups.sdf
+FS-CompMatrixFile=../fragment_space/compatibility_matrix.par
+FS-RotBondsDefFile=rotatableBonds-1.0
+FS-EnforceSymmetry
+
+FS-MaxHeavyAtom=50
+FS-MaxRotatableBond=20
+FS-MaxMW=10000
+
+# Fitness Provider - paramerers
+# Actual Provider
+FP-Source=Ru_14-el_fitness_BndLng.sh
+FP-Interpreter=bash
