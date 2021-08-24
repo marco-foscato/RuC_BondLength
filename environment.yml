@@ -4,6 +4,7 @@ channels:
   - openbabel
   - rdkit
   - anaconda
+  - conda-forge
 dependencies:
   - openbabel
   - openjdk=8.0.152
@@ -11,3 +12,6 @@ dependencies:
   - ipykernel
   - rdkit
   - matplotlib
+  - scipy
+  - scikit-learn
+  - svgutils
