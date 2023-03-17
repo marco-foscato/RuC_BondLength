@@ -7,3 +7,5 @@ This folders collects the customized tools used in this project.
 
 * FitnessRuCH2BndLng: case-specific utility that evaluates the geometry of molecular models, compare geometrical descriptors against hard-coded thresholds, and calculated the numerical value of a candidate's fitness.
 
+## Licenses 
+All third party licenses are defined in the `third-party_licences/THIRD-PARTY.txt` file, and the correpsonding license notices are collected in the `third-party_licences` folder.
