@@ -65,7 +65,7 @@ public class FitnessRuCH2BndLng
 {
 
     private static final Logger LOGGER = Logger.getLogger(
-    		FitnessRuCH2BndLng.class.getName());
+            FitnessRuCH2BndLng.class.getName());
 
     //SDF pre-geometry optimization with MOPAC
     private static String inpSdfFile;
@@ -111,43 +111,43 @@ public class FitnessRuCH2BndLng
             // Read Gaussian optimized geometry
             IAtomContainer optMol = DenoptimIO.readSingleSDFFile(optSdfFile);
 
-		    // Read higher precision XYZ coordinates
-		    ArrayList<String> xyzTxt = DenoptimIO.readList(hpXYZ);
-		    if (xyzTxt.size() != (optMol.getAtomCount() + 2))
-		    {
-	                LOGGER.log(Level.SEVERE, "Inconsistency between SDF and XYZ: check output from DFT");
-	                System.exit(-1);
-		    }
-		    for (int il=2; il<xyzTxt.size(); il++)
-		    {
-			String line = xyzTxt.get(il);
-			line = line.trim();
-			String[] parts = line.split("\\s+");
-	
-			String sym = parts[0];
-			double hpx = Double.parseDouble(parts[1]); 
-	                double hpy = Double.parseDouble(parts[2]);
-	                double hpz = Double.parseDouble(parts[3]);
-			Point3d hp3d = new Point3d(hpx,hpy,hpz);
-	
-			IAtom a = optMol.getAtom(il-2);
-	
-			//Check that the atom is the same
-			boolean isok = true;
-			if (!a.getSymbol().equals(sym))
-			{
-			    LOGGER.log(Level.SEVERE, "Inconsistency between SDF and XYZ: check atom " + a);
-	                    System.exit(-1); 
-			}
-	                if (hp3d.distance(a.getPoint3d()) > 0.0003)
-			{
-	                    LOGGER.log(Level.SEVERE, "Inconsistency between SDF and XYZ: check position of atom " + a);
-	                    System.exit(-1);		   
-			}
-	
-			//read in higher precision coordinates
-			a.setPoint3d(hp3d);
-		    }
+            // Read higher precision XYZ coordinates
+            ArrayList<String> xyzTxt = DenoptimIO.readList(hpXYZ);
+            if (xyzTxt.size() != (optMol.getAtomCount() + 2))
+            {
+                    LOGGER.log(Level.SEVERE, "Inconsistency between SDF and XYZ: check output from DFT");
+                    System.exit(-1);
+            }
+            for (int il=2; il<xyzTxt.size(); il++)
+            {
+            String line = xyzTxt.get(il);
+            line = line.trim();
+            String[] parts = line.split("\\s+");
+    
+            String sym = parts[0];
+            double hpx = Double.parseDouble(parts[1]); 
+                    double hpy = Double.parseDouble(parts[2]);
+                    double hpz = Double.parseDouble(parts[3]);
+            Point3d hp3d = new Point3d(hpx,hpy,hpz);
+    
+            IAtom a = optMol.getAtom(il-2);
+    
+            //Check that the atom is the same
+            boolean isok = true;
+            if (!a.getSymbol().equals(sym))
+            {
+                LOGGER.log(Level.SEVERE, "Inconsistency between SDF and XYZ: check atom " + a);
+                        System.exit(-1); 
+            }
+                    if (hp3d.distance(a.getPoint3d()) > 0.0003)
+            {
+                        LOGGER.log(Level.SEVERE, "Inconsistency between SDF and XYZ: check position of atom " + a);
+                        System.exit(-1);           
+            }
+    
+            //read in higher precision coordinates
+            a.setPoint3d(hp3d);
+            }
 
             // Copy SDF properties to optMol
             Map<Object,Object> molProps = mol.getProperties();
@@ -156,10 +156,10 @@ public class FitnessRuCH2BndLng
                 optMol.setProperty(key,molProps.get(key));
             }
 
-	        // Define indexes of atoms in Ru(L)(Cl)(Cl)=CH2
+            // Define indexes of atoms in Ru(L)(Cl)(Cl)=CH2
             Map<String,Integer> atomIndeces = defineAtomIndexes(optMol);
-	    
-	        //Calculate descriptors
+        
+            //Calculate descriptors
             DoubleVector descriptors = new DoubleVector(7);
             calculateDescriptors(optMol, atomIndeces, descriptors);
             StringBuilder sb = new StringBuilder();
@@ -170,8 +170,8 @@ public class FitnessRuCH2BndLng
             }
             optMol.setProperty("Descriptors", sb.toString().trim());
 
-		    // Check constraints
-	 	    String status = checkMolecule(descriptors, atomIndeces, optMol);
+            // Check constraints
+             String status = checkMolecule(descriptors, atomIndeces, optMol);
             if (!status.equalsIgnoreCase("OK"))
             {
                 // write MOL_ERROR tag
@@ -204,7 +204,7 @@ public class FitnessRuCH2BndLng
      * WARNING! This assumes Ru compounds with Ru(Cl)(Cl)(L)=CH2 core
      */
     private static Map<String,Integer> defineAtomIndexes(IAtomContainer mol)
-				throws Exception
+                throws Exception
     {
         Map<String,Integer> atmIndeces = new HashMap<String,Integer>();
 
@@ -304,8 +304,8 @@ public class FitnessRuCH2BndLng
             //Check unicity
             for (String label2 : atmIndeces.keySet())
             {
-		if (label.equals(label2))
-		    continue;
+        if (label.equals(label2))
+            continue;
 
                 if (atmIndeces.get(label).equals(atmIndeces.get(label2)))
                 {
@@ -328,7 +328,7 @@ public class FitnessRuCH2BndLng
         {
             throw new Exception("Input SDF file not supplied. Check parameter file.");
         }
-	if (hpXYZ == null || hpXYZ.length() == 0)
+        if (hpXYZ == null || hpXYZ.length() == 0)
         {
             throw new Exception("Input XYZ  file not supplied. Check parameter file.");
         }
@@ -391,8 +391,8 @@ public class FitnessRuCH2BndLng
         double distRuC = getDistance(mol, Ru, C);
         descriptors.setValue(4, distRuC);
 
-		double distRuL = getDistance(mol, Ru, X);
-		descriptors.setValue(5, distRuL);
+        double distRuL = getDistance(mol, Ru, X);
+        descriptors.setValue(5, distRuL);
 
         double angleCRuL = getAngle(mol, C, Ru, X);
         descriptors.setValue(6, angleCRuL);
@@ -419,7 +419,7 @@ public class FitnessRuCH2BndLng
         //List of atoms directly connected to Ru 
         ArrayList<IAtom> lst = new ArrayList<>();
         List<IAtom> nbrsRu = mol.getConnectedAtomsList(atmRu);
-	lst.addAll(nbrsRu);
+        lst.addAll(nbrsRu);
 
         //Add also all the atoms involved in calculation of descriptors
         for (String label : atomIndeces.keySet())
