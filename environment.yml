@@ -6,12 +6,12 @@ channels:
   - anaconda
   - conda-forge
 dependencies:
-  - openbabel
+  - openbabel=2.4.1
   - openjdk=8.0.152
-  - jupyterlab
-  - ipykernel
-  - rdkit
+  - jupyterlab=3.1.7
+  - ipykernel=5.3.4
+  - rdkit=2020.09.1.0
   - matplotlib
-  - scipy
-  - scikit-learn
-  - svgutils
+  - scipy=1.6.2
+  - scikit-learn=0.24.2
+  - svgutils=0.3.4
