@@ -19,7 +19,7 @@
  ShowTerminalCarbonLabels="no"
  ShowNonTerminalCarbonLabels="no"
  HideImplicitHydrogens="no"
- Magnification="375"
+ Magnification="287"
  LabelFont="60"
  LabelSize="8"
  LabelFace="96"
@@ -81,7 +81,7 @@
 </colortable><fonttable>
 <font id="60" charset="x-mac-roman" name="Arial"/>
 </fonttable><page
- id="1175077854"
+ id="1175077856"
  BoundingBox="0 0 864 1296"
  HeaderPosition="36"
  FooterPosition="36"
@@ -108,15 +108,15 @@
  BondOrdering="217131 217141 0 217185"
 /><n
  id="217132"
- p="203.81 48.84"
+ p="204.38 48.84"
  Z="69"
  Element="7"
  NumHydrogens="0"
  NeedsClean="yes"
  AS="N"
 ><t
- p="200.92 51.70"
- BoundingBox="201.53 45.98 206.04 51.70"
+ p="201.50 51.70"
+ BoundingBox="202.10 45.98 206.62 51.70"
  LabelJustification="Left"
 ><s font="60" size="8" color="0" face="96">N</s></t></n><n
  id="217134"
